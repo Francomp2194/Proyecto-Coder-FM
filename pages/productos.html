@@ -6,7 +6,6 @@
     <title>Chivitos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./../css/styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
     
@@ -16,124 +15,114 @@
     
 
     <header class="header">
-        <nav class="navbar navbar-expand-lg" style="background-color: #eebc51;">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="../img/LOGO.png" alt=""></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Productos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./reserva.html">Reservar</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./locales.html">Locales</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./nosotros.html">Nosotros</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+      <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html">
+            <img src="../img/LOGO.png" alt="Logo" height="70">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./reserva.html">Reservar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./locales.html">Locales</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <! --PRODUCTOS-->
     <! --PRODUCTOS-->
     <! --PRODUCTOS-->
     
-    <section class="product">
-      <div class="container">
-        
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-header text-center pb-5 pt-5">
-              <h2>Productos</h2>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas corrupti ullam ab. Esse, voluptas ad.
-            </div>
-          </div>
-        </div>
-
-      <div class="row">
-
-        <div class="col-12 col-md-12 col-lg-4">
-          <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
-            <div class="text-center">
-              <img src="../img/CHIVITO_A.png" alt="">
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">Chivito Canadiense</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, eligendi</p>
-              <a href="#" class="btn btn-primary">Comprar</a>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col- col-md-12 col-lg-4">
-          <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
-            <div class="text-center">
-              <img src="../img/CHIVITO_B.png" alt="">
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">Chivito de Pollo</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, eligendi</p>
-              <a href="#" class="btn btn-primary">Comprar</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-12 col-lg-4">
-          <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
-            <div class="text-center">
-              <img src="../img/CHIVITO_C.png" alt="">
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">Chivito al Plato</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, eligendi</p>
-              <a href="#" class="btn btn-primary">Comprar</a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      </div>
-    </section>
+    <div class="container-fluid productos p-5">
+      <h1 class="text-center">Nuestros Productos</h1>
+      <p class="lead text-center">Descubre nuestra selección especial</p>
       
+      <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card shadow-sm border rounded">
+                  <img src="../img/CHIVITO_A.png" class="card-img-top" alt="Producto 1">
+                  <div class="card-body">
+                      <h3 class="card-title">Chivito Canadiense</h3>
+                      <p class="card-text">Descripción corta del Producto 1.</p>
+                  </div>
+                  <div class="card-overlay" style="background-color: rgba(255, 255, 255, 0.244);"></div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card shadow-sm border rounded">
+                  <img src="../img/CHIVITO_B.png" class="card-img-top" alt="Producto 2">
+                  <div class="card-body">
+                      <h3 class="card-title">Chivito de Pollo</h3>
+                      <p class="card-text">Descripción corta del Producto 2.</p>
+                  </div>
+                  <div class="card-overlay" style="background-color: rgba(0, 0, 0, 0.3);"></div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card shadow-sm border rounded">
+                  <img src="../img/CHIVITO_C.png" class="card-img-top" alt="Producto 3">
+                  <div class="card-body">
+                      <h3 class="card-title">Chivito al Plato</h3>
+                      <p class="card-text">Descripción corta del Producto 3.</p>
+                  </div>
+                  <div class="card-overlay" style="background-color: rgba(0, 0, 0, 0.3);"></div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card shadow-sm border rounded">
+                  <img src="../img/MILANESA_D.png" class="card-img-top" alt="Producto 4">
+                  <div class="card-body">
+                      <h3 class="card-title">Milanesa Napolitana</h3>
+                      <p class="card-text">Descripción corta del Producto 4.</p>
+                  </div>
+                  <div class="card-overlay" style="background-color: rgba(0, 0, 0, 0.3);"></div>
+              </div>
+          </div>
+      </div>
+  </div>
 
     <! --FOOTER-->
     <! --FOOTER-->
     <! --FOOTER-->
 
     <footer>
-        <div class="footer">
-            <div class="footer_top">
-                <div>
-                    <img class="logo" src="../img/LOGObyn.png" alt="logo">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam ullam natus qui ab quasi ducimus reprehenderit corporis, repellendus nisi placeat!</p>
-                </div>
-                <div class="adress">
-                    <p><i class="bi bi-geo-alt-fill"></i> Montevideo<br><i class="bi bi-envelope-fill"></i> info@chivitos.com.uy</p>
-                </div>
-            </div>
-            <div class="footer_bottom">
-                <p>© MARCHE CHIVITOS 2024 - all rights reserved</p>
-                <div class="icons">
-                    <i class="bi bi-instagram"></i>
-                    <i class="bi bi-facebook"></i>
-                    <i class="bi bi-twitter-x"></i>
-                    <i class="bi bi-whatsapp"></i>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <div class="footer">
+          <div class="footer-top">
+              <div class="logo-container">
+                  <img class="logo" src="../img/LOGObyn.png" alt="logo">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam ullam nadtus qui abs quasi ducimus reprehenderit corporis, repellendus nisi placegat!</p>
+              </div>
+              <div class="address">
+                  <p><i class="bi bi-geo-alt-fill"></i> Montevideo<br><i class="bi bi-envelope-fill"></i> info@chivitos.com.uy</p>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <p>© MARCHE CHIVITOS 2024 - all rights reserved</p>
+              <div class="icons">
+                  <i class="bi bi-instagram"></i>
+                  <i class="bi bi-facebook"></i>
+                  <i class="bi bi-twitter"></i>
+                  <i class="bi bi-whatsapp"></i>
+              </div>
+          </div>
+      </div>
+  </footer>
 </body>
 </html>
