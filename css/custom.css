@@ -1,13 +1,13 @@
-
-
 @import "../sass/base/_fonts.scss";
 
 @import "../sass/base/_reset.scss";
 
 @import "../sass/components/_index.scss";
 
+@import "../sass/components/_locales.scss";
+
+@import "../sass/components/_nosotros.scss";
+
 @import "../sass/components/_footer.scss";
 
 @import "../sass/components/_media-queries.scss";
-
-/*# sourceMappingURL=custom.css.map */

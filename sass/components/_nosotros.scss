@@ -1,0 +1,51 @@
+/*********************/
+/********NOSOTROS********/
+/*********************/
+
+
+.nosotros {
+  background-image: url("../img/FONDO.png");
+  padding: 40px 0;
+
+  .nosotros_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    .titulo {
+      text-align: center;
+      font-family: "Titan One", sans-serif;
+      font-size: 4rem;
+      margin-bottom: 30px;
+    }
+
+    .contenido {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .texto {
+        flex: 1;
+        margin-right: 20px;
+
+        h2 {
+          font-family: "Titan One", sans-serif;
+          font-size: 1.8rem;
+          margin-bottom: 10px;
+        }
+      }
+
+      .nosotros_imagen {
+        flex: 1;
+        border-radius: 1rem;
+
+        img {
+          border-radius: 2rem;
+          max-width: 100%;
+          height: auto;
+          display: block;
+        }
+      }
+    }
+  }
+}

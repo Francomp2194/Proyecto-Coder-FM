@@ -3,59 +3,100 @@
 /*********************/
 
 @media (max-width: 768px) {
-    .hero {
+  .hero {
       flex-direction: column;
       padding: 20px;
-  
-      .hero-content {
-        max-width: 100%;
-        text-align: center;
-  
-        h1 {
-          font-size: 2em;
-        }
-  
-        h2 {
-          font-size: 1.5rem;
-        }
-  
-        .offer {
-          padding: 1rem;
-          font-size: 1em;
-        }
-      }
-  
-      .hero-image {
-        margin-top: 20px;
-        img {
-          max-width: 100%;
-        }
-      }
-    }
   }
-  
-  /*********************/
-  /*******FOOTER********/
-  /*********************/
-  
-  @media (max-width: 768px) {
-    .footer {
-      padding: 20px 2rem;
-  
-      .footer-top {
+
+  .hero-content {
+      max-width: 100%;
+      text-align: center;
+  }
+
+  .hero-image {
+      margin-top: 20px;
+  }
+
+  .hero-content h1 {
+      font-size: 2em;
+  }
+
+  .hero-content h2 {
+      font-size: 1em;
+  }
+
+  .offer {
+      padding: 1rem;
+      font-size: 1em;
+  }
+
+  .delivery-content {
+      flex-direction: column;
+      padding: 20px;
+  }
+
+  .delivery-left, .delivery-right {
+      max-width: 100%;
+      margin-right: 0;
+  }
+
+  .delivery-text, .map-container {
+      margin-bottom: 20px;
+  }
+
+  .delivery-text h3 {
+      font-size: 1.5em;
+  }
+
+  .delivery-text p {
+      font-size: 1em;
+  }
+
+  .map-container iframe {
+      height: 250px;
+  }
+}
+
+/*********************/
+/********LOCALES********/
+/*********************/
+
+@media (max-width: 768px) {
+    .grid {
+        display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        padding-inline: 2rem;
+        padding-top: 3rem;
+    }
+
+    .grid_item {
+        flex: 1;
+        height: 300px;
+    }
+
+    .grid_item1 {
+        padding-bottom: 6rem;
+    }
+
+    .hours-item {
+        font-size: 1rem; // Reduce font size for smaller screens
+    }
+}
+
+/*********************/
+/********NOSOTROS********/
+/*********************/
+
+@media (max-width: 768px) {
+    .nosotros {
+      .nosotros_container {
+        .contenido {
+          flex-direction: column;
   
-        .logo-container {
-          max-width: 120px;
-        }
-      }
-  
-      .footer-bottom {
-        flex-direction: column;
-        align-items: flex-start;
-        .icons {
-          font-size: 20px;
+          .texto {
+            margin-right: 0;
+            margin-bottom: 20px;
+          }
         }
       }
     }
