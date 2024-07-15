@@ -1,0 +1,91 @@
+.reservas {
+    padding: 6rem;
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-image: 
+      url("../img/FONDO_RESERVA_1.png"),
+      url("../img/FONDO_RESERVA_2.png");
+    background-size: 
+      400px,
+      300px;   
+    background-position: 
+      right 10% bottom 10%,
+      left center;
+    background-color: #ffe7c4;       
+  
+    .reservas_header {
+      text-align: center;
+  
+      h3 {
+        font-family: "Titan One", sans-serif;
+        font-size: 1.2rem;
+      }
+  
+      h1 {
+        font-family: "Titan One", sans-serif;
+        font-size: 2rem;
+      }
+    }
+  
+    .reservas_form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas:
+        "nombre email"
+        "fecha hora"
+        "cantidad reservar";
+      width: 36rem;
+      justify-content: center;
+      gap: 1rem;
+  
+      input {
+        padding: 0.75rem 1rem;
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 1.2rem;
+        color: black;
+        font-weight: bolder;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+  
+        &.nombre {
+          grid-area: nombre;
+        }
+  
+        &.email {
+          grid-area: email;
+        }
+  
+        &.fecha {
+          grid-area: fecha;
+        }
+  
+        &.hora {
+          grid-area: hora;
+        }
+  
+        &.cantidad {
+          grid-area: cantidad;
+        }
+  
+        &.reservar {
+          grid-area: reservar;
+          border: none;
+          background-color: rgb(229, 39, 39);
+          color: white;
+          text-transform: uppercase;
+          border-radius: 4px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+  
+          &:hover {
+            background-color: rgb(180, 30, 30);
+          }
+        }
+      }
+    }
+  }

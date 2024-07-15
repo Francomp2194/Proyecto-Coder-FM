@@ -257,7 +257,7 @@
 /*****************RESERVA*****************/
 /******************************************/
 
-.reservas{
+.reservas {
     padding: 6rem;
     padding-top: 10rem;
     display: flex;
@@ -266,79 +266,87 @@
     align-items: center;
     background-repeat: no-repeat;
     background-image: 
-       url("../img/FONDO_RESERVA_1.png"),
-       url("../img/FONDO_RESERVA_2.png");
+        url("../img/FONDO_RESERVA_1.png"),
+        url("../img/FONDO_RESERVA_2.png");
     background-size: 
-       400px,
-       300px;   
+        400px,
+        300px;   
     background-position: 
-       1020px 250px,
-       left center;   
+        right 10% bottom 10%,
+        left center;
+    background-color: #ffe7c4;       
 }
 
-.reservas_header{
+.reservas_header {
     text-align: center;
 }
 
-.reservas_header h3{
+.reservas_header h3 {
     font-family: "Titan One", sans-serif;
     font-size: 1.2rem;
 }
 
-.reservas_header h1{
+.reservas_header h1 {
     font-family: "Titan One", sans-serif;
     font-size: 2rem;
 }
 
-.reservas_form{
+.reservas_form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
-    "nombre email"
-    "fecha hora"
-    "cantidad reservar";
+        "nombre email"
+        "fecha hora"
+        "cantidad reservar";
     width: 36rem;
     justify-content: center;
     gap: 1rem;
 }
 
-.reservas_form input{
+.reservas_form input {
     padding: 0.75rem 1rem;
     font-family: "Roboto Condensed", sans-serif;
     font-size: 1.2rem;
     color: black;
     font-weight: bolder;
+    border: 1px solid #ccc; /* Add border to input fields */
+    border-radius: 4px; /* Add border-radius to input fields */
 }
 
-.reservas_form .nombre{
+.reservas_form .nombre {
     grid-area: nombre;
 }
 
-.reservas_form .email{
+.reservas_form .email {
     grid-area: email;
 }
 
-.reservas_form .fecha{
+.reservas_form .fecha {
     grid-area: fecha;
 }
 
-.reservas_form .hora{
+.reservas_form .hora {
     grid-area: hora;
 }
 
-.reservas_form .cantidad{
+.reservas_form .cantidad {
     grid-area: cantidad;
 }
 
-.reservas_form .reservar{
+.reservas_form .reservar {
     grid-area: reservar;
-    border:none;
+    border: none;
     background-color: rgb(229, 39, 39);
     color: white;
     text-transform: uppercase;
-    border-radius: 2px;
+    border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s ease; /* Add transition for hover effect */
+}
+
+.reservas_form .reservar:hover {
+    background-color: rgb(180, 30, 30); /* Darker shade on hover */
 }
 
 @media (max-width: 768px){
@@ -555,5 +563,18 @@
     background-position: center;
 }
 
-.product-card {
-    background-color: #f5f5dc;}
+.productos h1{
+    font-family: "Titan One", sans-serif;
+    color: #5e1305;
+    font-size: 3rem;
+}
+
+.card {
+    background-color: rgb(255, 226, 193);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+    
+.card:hover {
+        transform: scale(1.05);
+        background-color: rgb(255, 226, 193, 0.1);
+}    

@@ -79,7 +79,7 @@
     }
 
     .hours-item {
-        font-size: 1rem; // Reduce font size for smaller screens
+        font-size: 1rem;
     }
 }
 
@@ -98,6 +98,23 @@
             margin-bottom: 20px;
           }
         }
+      }
+    }
+  }
+
+  /*********************/
+/********RESERVAS********/
+/*********************/
+
+@media (max-width: 768px) {
+    .reservas {
+      padding: 2rem;
+      background-image: none;
+  
+      .reservas_form {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
       }
     }
   }

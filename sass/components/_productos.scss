@@ -1,0 +1,21 @@
+.productos {
+    background-image: url("../img/FONDO.png");
+    background-size: cover;
+    background-position: center;
+  
+    h1 {
+      font-family: "Titan One", sans-serif;
+      color: #5e1305;
+      font-size: 3rem;
+    }
+  
+    .card {
+      background-color: rgb(255, 226, 193);
+      transition: transform 0.3s ease, background-color 0.3s ease;
+  
+      &:hover {
+        transform: scale(1.05);
+        background-color: rgba(255, 226, 193, 0.1);
+      }
+    }
+  }
