@@ -1,8 +1,0 @@
-{
-  "name": "coder_francomarchese",
-  "version": "1.0.01",
-
-  "dependencies": {
-    "bootstrap": "^5.3.3"
-  }
-}
