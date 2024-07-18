@@ -167,4 +167,9 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Add the following lines at the end
+/robots.txt
+/package.json
+/package-lock.json
+
 # End of https://www.toptal.com/developers/gitignore/api/node,windows
